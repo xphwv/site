@@ -12,11 +12,11 @@
 <meta name="keywords" content="技术">
 <meta property="og:type" content="article">
 <meta property="og:title" content="电商系统名词">
-<meta property="og:url" content="http://www.xupan.top/2017/11/14/shop/index/index.html">
+<meta property="og:url" content="http://www.xupan.top/2017/11/15/shop/index/index.html">
 <meta property="og:site_name" content="小木屋">
 <meta property="og:description" content="文章以本人的日常工作为参照，在符合产品需求的情况下，尽可能的考虑到商城的扩展及后续运营工作而设计，初次涉足电商平台，期间参考了大量网上文献，结合实际情况而设计。 对电商平台而言，核心又难做的三部分：商品、订单、库存。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-11-14T11:43:38.833Z">
+<meta property="og:updated_time" content="2017-11-15T04:03:12.872Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="电商系统名词">
 <meta name="twitter:description" content="文章以本人的日常工作为参照，在符合产品需求的情况下，尽可能的考虑到商城的扩展及后续运营工作而设计，初次涉足电商平台，期间参考了大量网上文献，结合实际情况而设计。 对电商平台而言，核心又难做的三部分：商品、订单、库存。">
@@ -179,8 +179,8 @@
   
 
         
-        <a href="/2017/11/14/shop/index/" class="archive-article-date">
-  	<time datetime="2017-11-14T11:43:38.833Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-14</time>
+        <a href="/2017/11/15/shop/index/" class="archive-article-date">
+  	<time datetime="2017-11-15T04:03:12.871Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-15</time>
 </a>
         
       </header>
@@ -191,8 +191,8 @@
 <p>对电商平台而言，核心又难做的三部分：商品、订单、库存。<br><a id="more"></a></p>
 <h2 id="商品名词"><a href="#商品名词" class="headerlink" title="商品名词"></a>商品名词</h2><h3 id="类目"><a href="#类目" class="headerlink" title="类目"></a>类目</h3><p>分类树，电商常用的有两层类目，前台展示类目，后端商品类目。前台类目指的是展示给消费者的类目，会根据季节、销售策略、活动进行变动；后台类目属于基础数据，不可随意变动，添加SKU时都需要选择类目，进行绑定。需要注意的是，类目树的层次不能太深，一般三层或四层，如果太深，不论对于管理还是技术性能来说，都是不利的。前台类目与后台类目可随意搭配，设置前台类目关联时，对前台类目树最深层进行设置，可让其关联后台类目任一层，可一对一、一对多。前台类目还可以对应品牌。</p>
 <h3 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h3><p>分为关键属性、销售属性、非关键属性。关键属性是指能够唯一确定产品的属性，是必填项。例如手机的品牌、型号属于关键属性；销售属性组成SKU的特殊属性，或称为规格属性，如手机的”颜色”、”内存”；非关键属性指的是除关键属性、销售属性外的其他属性，如手机的手机接口类型，非关键属性不一定是非必填项，有时为了商品信息完整，也会设为必填项。属性定义对于良好的消费体验有着至关重要的关系，对搜索、索引、筛选都有至关重要的作用。</p>
-<h3 id="SPU"><a href="#SPU" class="headerlink" title="SPU"></a>SPU</h3><p>standard product unit（标准化产品单元），是一组标准化信息的集合，例如Iphone 7plus就是一个SPU。SPU与SKU的关系有许多种，可以一对多，一对一。<br>SPU信息中应该包含SPU属性、产品图片、产品描述、产品标签。SPU和SKU之间是通过规格来链接的。SPU(Iphone 7plus)通过颜色、内容关联到SKU(Iphone 7plus 128G 银色)。SPU的库存是由其对应的SKU库存共同决定的。</p>
-<h3 id="SKU"><a href="#SKU" class="headerlink" title="SKU"></a>SKU</h3><p>stock keeping uint（库存量单位），库存控制的最小可用单位。例如Iphone 7plus 128G 银色就是一个SKU，仓库管理、采购进货、库存显示的都是SKU。不同的公司都有自己的SKU编码规则，如果有自己的仓库，在商品入库时一般会打上自己的SKU码，这样整一套库存体系就会自上而下打通，当然还有另一种处理方式，设置自有SKU码与供应商条码的对应关系，将订单转化为发货单时，将自有SKU码转化为供应商的条码。</p>
+<h3 id="SPU"><a href="#SPU" class="headerlink" title="SPU"></a>SPU</h3><p>standard product unit（标准化产品单元），是一组标准化信息的集合，该集合描述了一个产品的特性。SPU与SKU的关系有许多种，可以是一对多，一对一。例如，iphone x就是一个SPU，N97也是一个SPU，这个与商家无关，与颜色、款式、套餐也无关。</p>
+<h3 id="SKU"><a href="#SKU" class="headerlink" title="SKU"></a>SKU</h3><p>SKU=stock keeping unit(库存量单位)，SKU即库存进出计量的单位，库存的最小可用单位。例如一个SKU通常表示：规格、颜色、款式。通常SKU码与供应商条码的对应关系，将订单转化为发货单时，将自有SKU码转化为供应商的条码。</p>
 <h2 id="订单名词"><a href="#订单名词" class="headerlink" title="订单名词"></a>订单名词</h2><h3 id="GMV"><a href="#GMV" class="headerlink" title="GMV"></a>GMV</h3><p>GMV指标通常称为网站成交金额，属于电商平台企业成交类指标，主要指拍下订单的总金额。GMV数值可能远远超过实际成交金额，这也是电商企业愿意公布GMV数据的原因之一。</p>
 
       
@@ -284,7 +284,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://www.xupan.top/2017/11/14/shop/index/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://www.xupan.top/2017/11/15/shop/index/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -298,18 +298,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/11/14/shop/db/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          商品管理数据库设计
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/11/14/home/fzk/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">丰子恺精选</div>
+    <a href="/2017/11/14/shop/db/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">商品管理数据库设计</div>
       <i class="icon-circle-right"></i>
     </a>
   
