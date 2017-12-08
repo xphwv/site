@@ -167,6 +167,117 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-work/mac/zsh" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/work/mac/zsh.html">终极 Shell(mac zsh)</a>
+    </h1>
+  
+
+        
+        <a href="/work/mac/zsh.html" class="archive-article-date">
+  	<time datetime="2017-12-07T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>zsh 是一款功能强大终端（shell）软件，既可以作为一个交互式终端，也可以作为一个脚本解释器。兼容Bash的同时 (默认不兼容，除非设置成 emulate sh)，还有提供了更高效的自动补全、文件名展开（通配符展开）、数组处理、可定制性高等特性。</p>
+<h3 id="为什么要用zsh（摘自网络）"><a href="#为什么要用zsh（摘自网络）" class="headerlink" title="为什么要用zsh（摘自网络）"></a>为什么要用zsh（摘自网络）</h3><p>Shell是Linux/Unix的一个外壳，你理解成衣服也行。它负责外界与Linux内核的交互，接收用户或其他应用程序的命令，然后把这些命令转化成内核能理解的语言，传给内核，内核是真正干活的，干完之后再把结果返回用户或应用程序。</p>
+<p>Linux/Unix提供了很多种Shell，为毛要这么多Shell？难道用来炒着吃么？那我问你，你同类型的衣服怎么有那么多件？花色，质地还不一样。写程序比买衣服复杂多了，而且程序员往往负责把复杂的事情搞简单，简单的事情搞复杂。牛程序员看到不爽的Shell，就会自己重新写一套，慢慢形成了一些标准，常用的Shell有这么几种，sh、bash、csh等，想知道你的系统有几种shell，可以通过以下命令查看：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /etc/shells</span><br></pre></td></tr></table></figure></p>
+<p>如下显示：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">/bin/bash</span><br><span class="line">/bin/csh</span><br><span class="line">/bin/ksh</span><br><span class="line">/bin/sh</span><br><span class="line">/bin/tcsh</span><br><span class="line">/bin/zsh</span><br></pre></td></tr></table></figure></p>
+<h3 id="Mac安装zsh"><a href="#Mac安装zsh" class="headerlink" title="Mac安装zsh"></a>Mac安装zsh</h3><p>mac已经预装zsh，由于配置比较复杂，国外大牛提供快速上手的zsh项目<br>网址（翻墙）：<a href="http://ohmyz.sh/" target="_blank" rel="external">http://ohmyz.sh/</a><br>Github：<a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="external">https://github.com/robbyrussell/oh-my-zsh</a></p>
+<ul>
+<li><p><strong>在线安装</strong>（2选1即可）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sh -c <span class="string">"<span class="variable">$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)</span>"</span></span><br><span class="line">sh -c <span class="string">"<span class="variable">$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)</span>"</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>源码安装</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh</span><br><span class="line">cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ</h3><ul>
+<li><strong>安装zsh之后”.bash_profile”中的环境变量不生效</strong></li>
+</ul>
+<p>执行vi ~/.zshrc 将 “source .bash_profile”粘贴到文件最下面，保存即可。</p>
+<ul>
+<li><strong>idea terminal还是原来的bash</strong></li>
+</ul>
+<p>打开 idea–&gt;Preferences–&gt;Tools–&gt;Terminal–&gt;Application settings–&gt;Shell path 修改为zsh路径<br>默认路径：/bin/zsh</p>
+<ul>
+<li><strong>iTerm2 MAC下最好的终端工具（不解释)</strong></li>
+</ul>
+<p><a href="http://www.iterm2.com/downloads.html" target="_blank" rel="external">http://www.iterm2.com/downloads.html</a></p>
+<hr>
+<p>鸣谢<br>感谢我的同事兼老乡”东东”同鞋的支持！</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/work//" class="article-tag-list-link color5">work</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/work/mac/zsh.html">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-photo/poplar" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -174,12 +285,12 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/02/photo/poplar/">白杨礼赞</a>
+      <a class="article-title" href="/photo/poplar.html">白杨礼赞</a>
     </h1>
   
 
         
-        <a href="/2017/12/02/photo/poplar/" class="archive-article-date">
+        <a href="/photo/poplar.html" class="archive-article-date">
   	<time datetime="2017-12-01T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-02</time>
 </a>
         
@@ -212,7 +323,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/12/02/photo/poplar/">展开全文 >></a>
+          <a class="article-more-a" href="/photo/poplar.html">展开全文 >></a>
         </p>
       
 
@@ -249,12 +360,12 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/30/work/server/polysh/">多台服务器聚合查询&amp;统计</a>
+      <a class="article-title" href="/work/server/polysh.html">多台服务器聚合查询&amp;统计</a>
     </h1>
   
 
         
-        <a href="/2017/11/30/work/server/polysh/" class="archive-article-date">
+        <a href="/work/server/polysh.html" class="archive-article-date">
   	<time datetime="2017-11-29T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-30</time>
 </a>
         
@@ -303,7 +414,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/30/work/server/polysh/">展开全文 >></a>
+          <a class="article-more-a" href="/work/server/polysh.html">展开全文 >></a>
         </p>
       
 
@@ -340,12 +451,12 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/28/photo/bj-park/">北秋之殇</a>
+      <a class="article-title" href="/photo/bj-park.html">北秋之殇</a>
     </h1>
   
 
         
-        <a href="/2017/11/28/photo/bj-park/" class="archive-article-date">
+        <a href="/photo/bj-park.html" class="archive-article-date">
   	<time datetime="2017-11-27T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-28</time>
 </a>
         
@@ -353,7 +464,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>本组照片为北京奥林匹克公园拍摄，拍摄于2017年秋。<br>
+        <p>本组照片为北京奥林匹克公园拍摄，拍摄于2017年秋。<br>《待续》<br>
         
       
 
@@ -377,7 +488,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/28/photo/bj-park/">展开全文 >></a>
+          <a class="article-more-a" href="/photo/bj-park.html">展开全文 >></a>
         </p>
       
 
@@ -414,12 +525,12 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/24/work/server/index/">服务器配置指南</a>
+      <a class="article-title" href="/work/server/index.html">服务器配置指南</a>
     </h1>
   
 
         
-        <a href="/2017/11/24/work/server/index/" class="archive-article-date">
+        <a href="/work/server/index.html" class="archive-article-date">
   	<time datetime="2017-11-23T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-24</time>
 </a>
         
@@ -463,7 +574,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/24/work/server/index/">展开全文 >></a>
+          <a class="article-more-a" href="/work/server/index.html">展开全文 >></a>
         </p>
       
 
@@ -500,12 +611,12 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/15/life/fzk/">丰子恺精选</a>
+      <a class="article-title" href="/life/fzk.html">丰子恺精选</a>
     </h1>
   
 
         
-        <a href="/2017/11/15/life/fzk/" class="archive-article-date">
+        <a href="/life/fzk.html" class="archive-article-date">
   	<time datetime="2017-11-14T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-15</time>
 </a>
         
@@ -548,7 +659,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/15/life/fzk/">展开全文 >></a>
+          <a class="article-more-a" href="/life/fzk.html">展开全文 >></a>
         </p>
       
 
@@ -585,12 +696,12 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/15/life/home/">奋斗</a>
+      <a class="article-title" href="/life/home.html">奋斗</a>
     </h1>
   
 
         
-        <a href="/2017/11/15/life/home/" class="archive-article-date">
+        <a href="/life/home.html" class="archive-article-date">
   	<time datetime="2017-11-14T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-15</time>
 </a>
         
@@ -633,7 +744,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/15/life/home/">展开全文 >></a>
+          <a class="article-more-a" href="/life/home.html">展开全文 >></a>
         </p>
       
 
@@ -670,12 +781,12 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/15/work/mall/db/">商品管理数据库设计</a>
+      <a class="article-title" href="/work/mall/db.html">商品管理数据库设计</a>
     </h1>
   
 
         
-        <a href="/2017/11/15/work/mall/db/" class="archive-article-date">
+        <a href="/work/mall/db.html" class="archive-article-date">
   	<time datetime="2017-11-14T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-15</time>
 </a>
         
@@ -718,7 +829,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/15/work/mall/db/">展开全文 >></a>
+          <a class="article-more-a" href="/work/mall/db.html">展开全文 >></a>
         </p>
       
 
@@ -755,12 +866,12 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/13/work/mall/index/">电商系统名词</a>
+      <a class="article-title" href="/work/mall/index.html">电商系统名词</a>
     </h1>
   
 
         
-        <a href="/2017/11/13/work/mall/index/" class="archive-article-date">
+        <a href="/work/mall/index.html" class="archive-article-date">
   	<time datetime="2017-11-12T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-13</time>
 </a>
         
@@ -804,7 +915,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/13/work/mall/index/">展开全文 >></a>
+          <a class="article-more-a" href="/work/mall/index.html">展开全文 >></a>
         </p>
       
 
