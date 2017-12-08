@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://www.xupan.top">
   <title>终极 Shell(mac zsh) | 小木屋</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="zsh 是一款功能强大终端（shell）软件，既可以作为一个交互式终端，也可以作为一个脚本解释器。兼容Bash的同时 (默认不兼容，除非设置成 emulate sh)，还有提供了更高效的自动补全、文件名展开（通配符展开）、数组处理、可定制性高等特性。 为什么要用zsh（摘自网络）Shell是Linux/Unix的一个外壳，你理解成衣服也行。它负责外界与Linux内核的交互，接收用户或其他应用程序的">
+  <meta name="description" content="zsh 是一款功能强大终端（shell）软件，既可以作为一个交互式终端，也可以作为一个脚本解释器。兼容Bash的同时 (默认不兼容，除非设置成 emulate sh)，还有提供了更高效的自动补全、文件名展开（通配符展开）、数组处理、可定制性高等特性。">
 <meta name="keywords" content="技术">
 <meta property="og:type" content="article">
 <meta property="og:title" content="终极 Shell(mac zsh)">
 <meta property="og:url" content="http://www.xupan.top/work/mac/zsh.html">
 <meta property="og:site_name" content="小木屋">
-<meta property="og:description" content="zsh 是一款功能强大终端（shell）软件，既可以作为一个交互式终端，也可以作为一个脚本解释器。兼容Bash的同时 (默认不兼容，除非设置成 emulate sh)，还有提供了更高效的自动补全、文件名展开（通配符展开）、数组处理、可定制性高等特性。 为什么要用zsh（摘自网络）Shell是Linux/Unix的一个外壳，你理解成衣服也行。它负责外界与Linux内核的交互，接收用户或其他应用程序的">
+<meta property="og:description" content="zsh 是一款功能强大终端（shell）软件，既可以作为一个交互式终端，也可以作为一个脚本解释器。兼容Bash的同时 (默认不兼容，除非设置成 emulate sh)，还有提供了更高效的自动补全、文件名展开（通配符展开）、数组处理、可定制性高等特性。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-12-08T13:30:24.431Z">
+<meta property="og:updated_time" content="2017-12-08T14:31:49.844Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="终极 Shell(mac zsh)">
-<meta name="twitter:description" content="zsh 是一款功能强大终端（shell）软件，既可以作为一个交互式终端，也可以作为一个脚本解释器。兼容Bash的同时 (默认不兼容，除非设置成 emulate sh)，还有提供了更高效的自动补全、文件名展开（通配符展开）、数组处理、可定制性高等特性。 为什么要用zsh（摘自网络）Shell是Linux/Unix的一个外壳，你理解成衣服也行。它负责外界与Linux内核的交互，接收用户或其他应用程序的">
+<meta name="twitter:description" content="zsh 是一款功能强大终端（shell）软件，既可以作为一个交互式终端，也可以作为一个脚本解释器。兼容Bash的同时 (默认不兼容，除非设置成 emulate sh)，还有提供了更高效的自动补全、文件名展开（通配符展开）、数组处理、可定制性高等特性。">
   
     <link rel="alternative" href="/atom.xml" title="小木屋" type="application/atom+xml">
   
@@ -187,7 +187,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>zsh 是一款功能强大终端（shell）软件，既可以作为一个交互式终端，也可以作为一个脚本解释器。兼容Bash的同时 (默认不兼容，除非设置成 emulate sh)，还有提供了更高效的自动补全、文件名展开（通配符展开）、数组处理、可定制性高等特性。</p>
+        <p>zsh 是一款功能强大终端（shell）软件，既可以作为一个交互式终端，也可以作为一个脚本解释器。兼容Bash的同时 (默认不兼容，除非设置成 emulate sh)，还有提供了更高效的自动补全、文件名展开（通配符展开）、数组处理、可定制性高等特性。<br><a id="more"></a></p>
 <h3 id="为什么要用zsh（摘自网络）"><a href="#为什么要用zsh（摘自网络）" class="headerlink" title="为什么要用zsh（摘自网络）"></a>为什么要用zsh（摘自网络）</h3><p>Shell是Linux/Unix的一个外壳，你理解成衣服也行。它负责外界与Linux内核的交互，接收用户或其他应用程序的命令，然后把这些命令转化成内核能理解的语言，传给内核，内核是真正干活的，干完之后再把结果返回用户或应用程序。</p>
 <p>Linux/Unix提供了很多种Shell，为毛要这么多Shell？难道用来炒着吃么？那我问你，你同类型的衣服怎么有那么多件？花色，质地还不一样。写程序比买衣服复杂多了，而且程序员往往负责把复杂的事情搞简单，简单的事情搞复杂。牛程序员看到不爽的Shell，就会自己重新写一套，慢慢形成了一些标准，常用的Shell有这么几种，sh、bash、csh等，想知道你的系统有几种shell，可以通过以下命令查看：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /etc/shells</span><br></pre></td></tr></table></figure></p>
 <p>如下显示：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">/bin/bash</span><br><span class="line">/bin/csh</span><br><span class="line">/bin/ksh</span><br><span class="line">/bin/sh</span><br><span class="line">/bin/tcsh</span><br><span class="line">/bin/zsh</span><br></pre></td></tr></table></figure></p>
@@ -309,7 +309,7 @@
 <nav id="article-nav">
   
   
-    <a href="/photo/poplar.html" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/life/poplar.html" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">白杨礼赞</div>
       <i class="icon-circle-right"></i>
     </a>
@@ -508,11 +508,15 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="http://xphwv.iteye.com" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
+              <a href="http://xphwv.iteye.com" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接【ITEYE】</a>
             </li>
           
             <li class="search-li">
-              <a href="/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
+              <a href="http://fashionvon.top" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接【宝宝】</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://www.xheldon.com" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接【东东」</a>
             </li>
           
         </ul>
