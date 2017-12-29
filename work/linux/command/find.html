@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://www.xupan.top">
   <title>find | 小木屋</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="find命令用于文件树种查找文件，只有你想不到的，没有它做不到的。 语法find path -options [-print -exec -ok] 常用选项-name   按照文件名查找文件。-mtime -n +n  按照文件的更改时间来查找文件， -n表示文件更改时间距现在n天以内，+n表示文件更改时间距现在n天以前-type  查找某一类型的文件，诸如：b - 块设备文件;d - 目录;c">
+  <meta name="description" content="find命令用于文件树种查找文件，只有你想不到的，没有它做不到的。">
 <meta name="keywords" content="技术">
 <meta property="og:type" content="article">
 <meta property="og:title" content="find">
 <meta property="og:url" content="http://www.xupan.top/work/linux/command/find.html">
 <meta property="og:site_name" content="小木屋">
-<meta property="og:description" content="find命令用于文件树种查找文件，只有你想不到的，没有它做不到的。 语法find path -options [-print -exec -ok] 常用选项-name   按照文件名查找文件。-mtime -n +n  按照文件的更改时间来查找文件， -n表示文件更改时间距现在n天以内，+n表示文件更改时间距现在n天以前-type  查找某一类型的文件，诸如：b - 块设备文件;d - 目录;c">
+<meta property="og:description" content="find命令用于文件树种查找文件，只有你想不到的，没有它做不到的。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-12-29T07:15:01.049Z">
+<meta property="og:updated_time" content="2017-12-29T07:19:08.975Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="find">
-<meta name="twitter:description" content="find命令用于文件树种查找文件，只有你想不到的，没有它做不到的。 语法find path -options [-print -exec -ok] 常用选项-name   按照文件名查找文件。-mtime -n +n  按照文件的更改时间来查找文件， -n表示文件更改时间距现在n天以内，+n表示文件更改时间距现在n天以前-type  查找某一类型的文件，诸如：b - 块设备文件;d - 目录;c">
+<meta name="twitter:description" content="find命令用于文件树种查找文件，只有你想不到的，没有它做不到的。">
   
     <link rel="alternative" href="/atom.xml" title="小木屋" type="application/atom+xml">
   
@@ -187,7 +187,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>find命令用于文件树种查找文件，只有你想不到的，没有它做不到的。</p>
+        <p>find命令用于文件树种查找文件，只有你想不到的，没有它做不到的。<br><a id="more"></a></p>
 <h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><p>find path -options [-print -exec -ok]</p>
 <h3 id="常用选项"><a href="#常用选项" class="headerlink" title="常用选项"></a>常用选项</h3><p>-name   按照文件名查找文件。<br>-mtime -n +n  按照文件的更改时间来查找文件， -n表示文件更改时间距现在n天以内，+n表示文件更改时间距现在n天以前<br>-type  查找某一类型的文件，诸如：b - 块设备文件;d - 目录;c - 字符设备文件;p - 管道文件;l - 符号链接文件;f - 普通文件<br>-size n：[c] 查找文件长度为n块的文件，带有c时表示文件长度以字节计。<br>-depth 在查找文件时，首先查找当前目录中的文件，然后再在其子目录中查找。</p>
 <h3 id="组合使用"><a href="#组合使用" class="headerlink" title="组合使用"></a>组合使用</h3><p>-xargs<br>找到path目录下所有的名称为pom.xml的文件，然后执行mvn instanll 命令。<br>find /usr/local/work/workspace/  -type f -name pom.xml |xargs -I{} mvn dependency:sources -DdownloadSources=true -DdownloadJavadocs=true -f {}<br>find /usr/local/work/workspace/  -type f -name pom.xml |xargs -I{} mvn install -f {}</p>
@@ -295,8 +295,8 @@
     </a>
   
   
-    <a href="/work/linux/command/dig.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">dig</div>
+    <a href="/work/linux/command/index.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Linux Command</div>
       <i class="icon-circle-right"></i>
     </a>
   
