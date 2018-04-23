@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="小木屋">
 <meta property="og:description" content="用到啥就整理啥，部分抄袭人家的啦，^o^">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-01-23T08:44:31.858Z">
+<meta property="og:updated_time" content="2018-01-23T08:47:50.103Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git使用指北">
 <meta name="twitter:description" content="用到啥就整理啥，部分抄袭人家的啦，^o^">
@@ -259,7 +259,8 @@
 <li><p>git branch -vv  查看本地分支关联的远程分支，基于远程master分支新建分支test</p>
 </li>
 <li>git branch –set-upstream-to origin/master master 将远程分支origin/master绑定本地分支master</li>
-<li>想删除所有提交历史<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">➜  blogs git:(master) ✗ git checkout --orphan last_branch</span><br><span class="line">➜  blogs git:(last_branch) ✗ git add -A</span><br><span class="line">➜  blogs git:(last_branch) ✗ git commit -am &apos;init&apos;</span><br><span class="line">➜  blogs git:(last_branch) git branch -D master</span><br><span class="line">Deleted branch master (was 9314aec).</span><br><span class="line">➜  blogs git:(last_branch) git branch -m master</span><br><span class="line">➜  blogs git:(master) git push -f origin master</span><br></pre></td></tr></table></figure>
+<li>git config user.name  修改当前项目提交用户（项目目录下）</li>
+<li>删除所有提交历史（基于当前分支下新建一个分支，然后把之前分支删除，接着把新建的分支重命名为原分支名称，最后把分支强制推送到远程）<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">➜  blogs git:(master) ✗ git checkout --orphan last_branch</span><br><span class="line">➜  blogs git:(last_branch) ✗ git add -A</span><br><span class="line">➜  blogs git:(last_branch) ✗ git commit -am &apos;init&apos;</span><br><span class="line">➜  blogs git:(last_branch) git branch -D master</span><br><span class="line">Deleted branch master (was 9314aec).</span><br><span class="line">➜  blogs git:(last_branch) git branch -m master</span><br><span class="line">➜  blogs git:(master) git push -f origin master</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 
